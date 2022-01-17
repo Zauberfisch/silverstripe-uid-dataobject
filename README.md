@@ -81,7 +81,7 @@ class MyDataObject extends \SilverStripe\ORM\DataObject {
 	private static $extensions = [
 		\zauberfisch\UidDataObject\CustomUidDataObjectExtension::class,
 	];
-		private static $custom_uid_prefix = 'abc-123'; // optional: ""
+		private static $custom_uid_prefix = 'abc-'; // optional: ""
 	private static $custom_uid_suffix = ''; // optional, default: ""
 	private static $custom_uid_length = 8; // optional, default: 8
 
