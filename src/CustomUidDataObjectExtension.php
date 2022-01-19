@@ -21,9 +21,9 @@ class CustomUidDataObjectExtension extends DataExtension {
 	public function onBeforeWrite() {
 		parent::onBeforeWrite();
 		if (!$this->owner->UID) {
-			$prefix = $this->owner->config()->uninherited('custom_uid_prefix');
-			$length = $this->owner->config()->uninherited('custom_uid_length');
-			$suffix = $this->owner->config()->uninherited('custom_uid_suffix');
+			$prefix = $this->owner->config()->get('custom_uid_prefix');
+			$length = $this->owner->config()->get('custom_uid_length');
+			$suffix = $this->owner->config()->get('custom_uid_suffix');
 			do {
 				$hash = '';
 				while (strlen($hash) < $length) {
