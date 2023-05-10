@@ -20,7 +20,7 @@
 	],
 	"require": {
 		"php": "^7.4 || ^8.0",
-		"silverstripe/framework": "^4.0",
+		"silverstripe/framework": "^4.5 || ^5.0",
 		"ramsey/uuid": "^4"
 	},
 	"autoload": {
